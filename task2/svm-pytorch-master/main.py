@@ -10,12 +10,12 @@ import argparse
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
+import torch.nn as nn
 import torch.optim as optim
 from sklearn.datasets.samples_generator import make_blobs
 
-from model import LinearSVM
 
-
+# TODO: Get the mnist dataset and preprocess
 def get_data():
     X, Y = make_blobs(n_samples=500, centers=2, random_state=0, cluster_std=0.4)
     return X, Y
@@ -94,6 +94,18 @@ def main(args):
 
     train(X, Y, model, args)
     visualize(X, Y, model)
+
+
+class LinearSVM(nn.Module):
+    """Support Vector Machine"""
+
+    def __init__(self):
+        super(LinearSVM, self).__init__()
+        self.fc = nn.Linear(2, 1)
+
+    def forward(self, x):
+        h = self.fc(x)
+        return h
 
 
 if __name__ == "__main__":
