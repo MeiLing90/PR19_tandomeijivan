@@ -1,30 +1,28 @@
-Task 2a)
+# Instructions:
+
+## Task 2a)
+File Format: .ipynb
+Use Jupyter Notebook to run the SVM.
+
+## Task 2b)
 
 
-
-Task 2b)
-• Apply MLP to the MNIST dataset
-• MLP with one hidden layer
-• Optimise parameters using cross-validation
-
-0) Prepare:
+## Task 2c
+1) Prepare:
 source activate deepdiva
 
-1) Get the Dataset:
-python util/data/get_a_dataset.py --dataset mnist --output-folder datasets
+2) Dataset:
+Add the mnist folder provided on ilias (in mnist-png-format) to the dataset folder
 
-2) Train the FC_simple model (simple Fully Connected MLP):
-python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit --model-name FC_simple
---> to adapt: https://diva-dia.github.io/DeepDIVAweb/articles/customizing-experiments/
+2) Run Model:
+python template/RunMe.py --dataset-folder datasets/mnist --no-cuda --ignoregit --model-name PR_CNN
 
-3) see the Results:
+3) Results on Tensorboard (Visualization):
 tensorboard --logdir output --port 9009
 
-4) Optimize the parameters:
-https://diva-dia.github.io/DeepDIVAweb/articles/run-sigopt/
+(Other outputs with different learning rate and epoch values from us are also available in the output folder and the plots can be seen on the tensorboard)
 
-5) See the results again and so on...
-
+## Task 2d
 
 -----------------------------------------------------------------------------------------------------------------
 
