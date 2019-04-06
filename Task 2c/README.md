@@ -1,12 +1,5 @@
 # Instructions:
 
-## Task 2a)
-File Format: .ipynb  
-Use Jupyter Notebook to run the SVM.
-
-## Task 2b)
-
-
 ## Task 2c
 1) Prepare:  
 source activate deepdiva
@@ -21,8 +14,6 @@ python template/RunMe.py --dataset-folder datasets/mnist --no-cuda --ignoregit -
 tensorboard --logdir output --port 9009
 
 (Other outputs with different learning rate and epoch values from us are also available in the output folder and the plots can be seen on the tensorboard)
-
-## Task 2d
 
 -----------------------------------------------------------------------------------------------------------------
 
