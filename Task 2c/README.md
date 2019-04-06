@@ -1,7 +1,7 @@
 # Instructions:
 
 ## Task 2a)
-File Format: .ipynb
+File Format: .ipynb  
 Use Jupyter Notebook to run the SVM.
 
 ## Task 2b)
